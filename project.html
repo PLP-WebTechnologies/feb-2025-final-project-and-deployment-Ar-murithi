@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefdfb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffb6b9;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 0 20px;
+}
+
+.section {
+  padding: 40px 0;
+  max-width: 1000px;
+  margin: auto;
+  border-bottom: 1px solid #eee;
+}
+
+h1, h2 {
+  color: #444;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-image {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background: #fff5f3;
+  border-left: 5px solid #ffb6b9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #ffb6b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #f28487;
+}
+
+footer {
+  background-color: #ffb6b9;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+       
+
+    </style>
+</head>
+<body>
+     <h1>Lina the Yogi</h1>
+    <p>Yoga Instructor | Wellness Advocate | Mindful Living Enthusiast</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Yoga Projects</a></li>
+        <li><a href="#skills">Yoga Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section home-section">
+      <div class="home-content">
+        <div class="home-image">
+          <img src="https://images.pexels.com/photos/317155/pexels-photo-317155.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        <div>
+          <h1>Welcome to My Yoga Journey</h1>
+          <h2>Embrace Mindful Living</h2>
+          <p>
+            I am a certified yoga instructor passionate about guiding others toward holistic wellness, mindfulness, and a balanced lifestyle through yoga and meditation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>My journey began with a deep curiosity for health and well-being, leading me to yoga. Over the years, I’ve practiced and taught various styles focusing on mindfulness, breathwork, and holistic health.</p>
+      <p>When I’m not teaching, I enjoy exploring meditation, cooking plant-based meals, and connecting with nature.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Yoga Skills</h2>
+      <div class="card-container">
+        <div class="skill-card"><strong>Yoga Practices:</strong> Hatha, Vinyasa, Yin, Kundalini</div>
+        <div class="skill-card"><strong>Mindfulness:</strong> Meditation, breathwork, mindful movement</div>
+        <div class="skill-card"><strong>Wellness:</strong> Nutrition, holistic health, stress management</div>
+        <div class="skill-card"><strong>Teaching:</strong> Group classes, private sessions, workshops</div>
+        <div class="skill-card"><strong>Community:</strong> Retreats, events, online classes</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Yoga Projects</h2>
+      <ul>
+        <li><strong>Online Classes:</strong> Weekly live and recorded sessions</li>
+        <li><strong>Mindfulness Challenge:</strong> 21-day meditation and journaling</li>
+        <li><strong>Yoga Retreats:</strong> Wellness events in nature</li>
+      </ul>
+    </section>
+
+    <section id="resume" class="section">
+      <h2>Resume</h2>
+      <p>Download my yoga teaching resume <a href="CV/Lina_Kinya_Resume.pdf" target="_blank">here</a>.</p>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p>Email: <a href="mailto:linakinya@gmail.com">linakinya@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lina the Yogi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name && email && message) {
+        alert(`Thank you, ${name}! Your message has been received.`);
+        this.reset();
+      } else {
+        alert("Please fill in all fields.");
+      }
+    });
+  </script>
+</body>
+    
+</body>
+</html>
